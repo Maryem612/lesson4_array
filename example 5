@@ -1,0 +1,34 @@
+/*
+ ============================================================================
+ Name        : array.c
+ Author      : MariamAbdelmegid
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	int arr[100] = { 0 };
+	int i, x, 
+  int position, n = 10;
+	for (i = 0; i < 10; i++)
+		arr[i] = i + 1;
+	for (i = 0; i < n; i++)
+		printf("%d ", arr[i]);
+	printf("\n");
+	x = 50;
+	position = 5;
+	n++;
+	for (i = n - 1; i >= position; i--)
+		arr[i] = arr[i - 1];
+	arr[position - 1] = x;
+	for (i = 0; i < n; i++)
+		printf("%d ", arr[i]);
+	printf("\n");
+
+	return 0;
+}
